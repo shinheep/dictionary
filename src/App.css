@@ -1,38 +1,100 @@
+body {
+  background: linear-gradient(#cddafd, #ffffff);
+  font-family: 'Mulish', sans-serif;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+}
+
+.title {
+  font-family: 'Merriweather', serif;
+}
+
+.searchBox{
+  border: 1px solid #dfe7fd;
+  box-shadow: 10px 5px 5px gray;
+  height: 50px;
+  width: 330px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search{
+  align-items: center;
+  bottom: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.definitionBox{
+  border: 1px solid #dfe7fd;
+  box-shadow: 10px 5px 5px gray;
+  height: 200px;
+  width: 310px;
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: left;
+  padding: 10px;
+  background-color: white;
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+}
+
+.socials {
+  display: inline;
+  margin: 10px;
+}
+
+.fa-linkedin {
+  color: #0A66C2;
+}
+
+.fa-linkedin:hover {
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-github {
+  color: #000000;
+}
+
+.fa-github:hover {
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.fa-twitter-square {
+  color: #4DA6EA;
+}
+
+.fa-twitter-square:hover {
+  font-size: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (min-width: 678px){
+  .searchBox{
+    width: 500px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .definitionBox{
+    width: 480px;
+  }
+}
+
+@media only screen and (min-width: 992px){
+  .searchBox{
+    width: 700px;
+  }
+
+  .definitionBox{
+    width: 680px;
   }
 }
